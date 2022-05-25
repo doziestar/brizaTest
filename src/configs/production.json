@@ -1,0 +1,30 @@
+{
+  "env": "production",
+  "secretKey": "secretKey",
+  "secretOrPrivateKey": "secretOrPrivateKey",
+  "log": {
+    "format": "combined",
+    "dir": "../logs"
+  },
+  "cors": {
+    "origin": "your.domain.com",
+    "credentials": true
+  },
+
+  "db_user": "aotthwcnknddec",
+  "db_password": "166d28835baf26d502d6cd249d893474c5e837f80ab12bc47c3d230877927c73",
+  "db_host": "ec2-54-172-175-251.compute-1.amazonaws.com",
+  "db_port": "5432",
+  "db_name": "d7taaf36dgdp7a",
+
+  "database": {
+    "host": "aotthwcnknddec",
+    "password": "166d28835baf26d502d6cd249d893474c5e837f80ab12bc47c3d230877927c73",
+    "port": "5432",
+    "user": "aotthwcnknddec",
+    "name": "d7taaf36dgdp7a",
+    "ssl": true,
+    "url": "postgres://aotthwcnknddec:166d28835baf26d502d6cd249d893474c5e837f80ab12bc47c3d230877927c73@ec2-54-172-175-251.compute-1.amazonaws.com:5432/d7taaf36dgdp7a?sslmode=no-verify"
+  }
+
+}
