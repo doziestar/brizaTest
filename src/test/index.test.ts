@@ -2,9 +2,9 @@ import request from 'supertest';
 import App from '../app';
 import IndexRoute from '../routes/index.route';
 
-// afterAll(async () => {
-//   await new Promise<void>(resolve => setTimeout(() => resolve(), 500));
-// });
+afterAll(async () => {
+	await new Promise<void>((resolve) => setTimeout(() => resolve(), 500));
+});
 
 describe('Testing Index', () => {
 	describe('[GET] /', () => {
