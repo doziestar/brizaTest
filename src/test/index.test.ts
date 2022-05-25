@@ -12,14 +12,26 @@ describe('Testing Index', () => {
 			const indexRoute = new IndexRoute();
 			const app = new App([indexRoute]);
 
-			return request(app.getServer()).get(`${indexRoute.path}`).expect(200);
+			return request(app.getServer()).get(`/api/v1/`).expect(200);
+		});
+
+		it('response body contain author === Chidozie C. Okafor', () => {
+			const indexRoute = new IndexRoute();
+			const app = new App([indexRoute]);
+
+			return request(app.getServer())
+				.get(`/api/v1/`)
+				.expect(200)
+				.then((res) => {
+					expect(res.body.author).toBe('Chidozie C. Okafor');
+				});
 		});
 
 		it('response body', () => {
 			const indexRoute = new IndexRoute();
 			const app = new App([indexRoute]);
 
-			return request(app.getServer()).get(`${indexRoute.path}`).expect({
+			return request(app.getServer()).get(`/api/v1/`).expect({
 				message: 'Welcome To Briza!',
 				author: 'Chidozie C. Okafor',
 				version: '1.0.0',
