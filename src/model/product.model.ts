@@ -1,5 +1,6 @@
 import { DataTypes, Model } from 'sequelize';
 import { IProduct } from '../interface/product.interface';
+import { User } from '../model/user.model';
 import sequelize from '../utils/db';
 
 class Product extends Model implements IProduct {
@@ -40,3 +41,13 @@ Product.init(
 		paranoid: true,
 	}
 );
+
+User.hasMany(Product, {
+	foreignKey: 'userId',
+	as: 'products',
+});
+
+Product.belongsTo(User, {
+	foreignKey: 'userId',
+	as: 'user',
+});
