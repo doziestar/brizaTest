@@ -23,9 +23,8 @@ if (env === 'production') {
 	});
 } else {
 	console.log(config.get('db'));
-	sequelize = new Sequelize('sqlite::memory:', {
-		dialect: 'sqlite',
-		storage: 'src/database.sqlite',
+	sequelize = new Sequelize(config.get('db'), {
+		dialect: 'postgres',
 	});
 }
 

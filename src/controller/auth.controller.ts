@@ -11,7 +11,14 @@ class AuthController {
 					message: 'Email and password are required',
 				});
 			}
-			const user: IUser = await User.create(req.body);
+			let user: IUser = await User.findOne({
+				where: {
+					email: req.body.email,
+				},
+			});
+			if (user) throw new Error('User already exists');
+
+			user = await User.create(req.body);
 			const token = await user.generateToken();
 			res.status(201).json({
 				message: 'User created successfully',

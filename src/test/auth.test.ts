@@ -18,4 +18,19 @@ describe('User Authentication Testing', () => {
 			expect(response.body.message).toBe('User created successfully');
 		});
 	});
+
+	describe('[POST] /api/v1/auth/login', () => {
+		const app = new App([new AuthRoute()]).getServer();
+		it('response statusCode 200', async () => {
+			const response = await request(app)
+				.post('/api/v1/auth/login')
+				.send({
+					email: 'dozie@gmail.com',
+					password: 'password',
+				})
+				.expect(200);
+			expect(response.body.message).toBe('User logged in successfully');
+			expect(response.body.token).toBeTruthy();
+		});
+	});
 });

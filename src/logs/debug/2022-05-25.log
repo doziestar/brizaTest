@@ -185,3 +185,26 @@
 2022-05-25 16:05:56 info: [0mGET /api/v1/ [32m200[0m 0.850 ms - 251[0m
 2022-05-25 16:05:56 info: 🚀 Database connected
 2022-05-25 16:05:56 info: 🚀 Database connected
+2022-05-25 16:07:25 info: [0mPOST /api/v1/auth/signup [33m404[0m 73.656 ms - 158[0m
+2022-05-25 16:07:27 info: [0mGET /api/v1/ [32m200[0m 6.810 ms - 251[0m
+2022-05-25 16:07:27 info: 🚀 Database connected
+2022-05-25 16:07:27 info: [0mGET /api/v1/ [32m200[0m 1.579 ms - 251[0m
+2022-05-25 16:07:28 info: 🚀 Database connected
+2022-05-25 16:07:28 info: [0mGET /api/v1/ [32m200[0m 11.388 ms - 251[0m
+2022-05-25 16:07:28 info: 🚀 Database connected
+2022-05-25 16:07:28 info: 🚀 Database connected
+2022-05-25 16:08:26 info: =================================
+2022-05-25 16:08:26 info: ======= ENV: development =======
+2022-05-25 16:08:26 info: 🚀 App listening on the port 3000
+2022-05-25 16:08:26 info: =================================
+2022-05-25 16:08:26 info: 🚀 Database connected
+2022-05-25 16:13:34 info: =================================
+2022-05-25 16:13:34 info: ======= ENV: development =======
+2022-05-25 16:13:34 info: 🚀 App listening on the port 3000
+2022-05-25 16:13:34 info: =================================
+2022-05-25 16:13:34 info: 🚀 Database connected
+2022-05-25 16:18:07 info: =================================
+2022-05-25 16:18:07 info: ======= ENV: development =======
+2022-05-25 16:18:07 info: 🚀 App listening on the port 3000
+2022-05-25 16:18:07 info: =================================
+2022-05-25 16:18:07 info: 🚀 Database connected
