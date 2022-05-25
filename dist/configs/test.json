@@ -1,0 +1,13 @@
+{
+    "env": "test",
+    "secretKey": "secretKey",
+    "log": {
+        "format": "dev",
+        "dir": "../logs"
+    },
+    "cors": {
+        "origin": true,
+        "credentials": true
+    },
+    "db": "postgres://postgres:918273645dozie@localhost:5432/briza"
+}

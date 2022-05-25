@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "/Users/user/Documents/Github/client/brizaTest/dist/logs/error/.1e3d434c4792677558459bc9d9b8b29e5f2c12fe-audit.json",
+    "files": [
+        {
+            "date": 1653492108243,
+            "name": "/Users/user/Documents/Github/client/brizaTest/dist/logs/error/2022-05-25.log",
+            "hash": "e8ca15d86c0d443972287b04f4ea395a"
+        }
+    ],
+    "hashType": "md5"
+}
