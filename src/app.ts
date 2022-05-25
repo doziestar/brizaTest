@@ -10,6 +10,7 @@ import hpp from 'hpp';
 import morgan from 'morgan';
 import { Routes } from './interface/routes.interface';
 import errorMiddleware from './middlewares/error.middleware';
+import sequelize from './utils/db';
 // import sequelize from '@utils/db';
 import { logger, stream } from './utils/logger';
 
@@ -65,16 +66,16 @@ class App {
 	}
 
 	private async initializeDatabase() {
-		// sequelize
-		// 	.authenticate()
-		// 	.then(() => {
-		// 		logger.info('🚀 Database connected');
-		// 	})
-		// 	.catch((err) => {
-		// 		logger.error('🚨 Database connection error: ' + err);
-		// 	});
-		// const isDev = this.env === 'development';
-		// await sequelize.sync({ alter: isDev });
+		sequelize
+			.authenticate()
+			.then(() => {
+				logger.info('🚀 Database connected');
+			})
+			.catch((err) => {
+				logger.error('🚨 Database connection error: ' + err);
+			});
+		const isDev = this.env === 'development';
+		await sequelize.sync({ alter: isDev });
 	}
 
 	private initializeErrorHandling() {
