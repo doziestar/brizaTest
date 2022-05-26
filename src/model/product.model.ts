@@ -51,3 +51,5 @@ Product.belongsTo(User, {
 	foreignKey: 'userId',
 	as: 'user',
 });
+
+export default Product;
