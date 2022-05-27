@@ -64,8 +64,7 @@ class App {
             logger_1.logger.error('🚨 Database connection error: ' + err);
         });
         const isDev = this.env === 'development';
-        console.log('isDev: ', isDev);
-        await db_1.default.sync({ alter: isDev });
+        await db_1.default.sync({ force: isDev });
     }
     initializeErrorHandling() {
         this.app.use(error_middleware_1.default);

@@ -18,6 +18,7 @@ describe('User Authentication Testing', () => {
             })
                 .expect(201);
             expect(response.body.message).toBe('User created successfully');
+            expect(response.body.token).toBeTruthy();
         });
     });
     describe('[POST] /api/v1/auth/login', () => {

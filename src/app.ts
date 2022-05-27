@@ -75,8 +75,7 @@ class App {
 				logger.error('🚨 Database connection error: ' + err);
 			});
 		const isDev = this.env === 'development';
-		console.log('isDev: ', isDev);
-		await sequelize.sync({ alter: isDev });
+		await sequelize.sync({ force: isDev });
 	}
 
 	private initializeErrorHandling() {

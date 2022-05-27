@@ -1,0 +1,6 @@
+{
+	"projectId": "chatct",
+	"databaseURL": "https://chatct.firebaseio.com",
+	"storageBucket": "chatct.appspot.com",
+	"messagingSenderId": "1069078270154"
+}

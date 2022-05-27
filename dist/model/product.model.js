@@ -40,3 +40,4 @@ Product.belongsTo(user_model_1.User, {
     foreignKey: 'userId',
     as: 'user',
 });
+exports.default = Product;

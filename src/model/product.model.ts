@@ -4,7 +4,6 @@ import { User } from '../model/user.model';
 import sequelize from '../utils/db';
 
 class Product extends Model implements IProduct {
-	public id!: string;
 	public name!: string;
 	public price!: number;
 	public quantity!: number;
